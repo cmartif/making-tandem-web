@@ -4,17 +4,16 @@
   "description": "Making Tandem - Herramientas de comunicación visual para familias adoptivas",
   "main": "index.html",
   "scripts": {
-    "start": "npx serve . -p $PORT --single",
-    "dev": "npx serve . -p 3000",
+    "start": "python -m http.server $PORT",
+    "serve": "npx serve . -p $PORT --no-clipboard --no-port-switching",
+    "dev": "python -m http.server 3000",
     "build": "echo 'Static site - no build needed'"
   },
   "keywords": ["pictogramas", "adopción internacional", "comunicación visual", "educación infantil"],
   "author": "Natalia y Carlos - Making Tandem",
   "license": "MIT",
-  "dependencies": {
-    "serve": "^14.2.1"
-  },
+  "dependencies": {},
   "engines": {
-    "node": ">=18.0.0"
+    "python": ">=3.8.0"
   }
 }
