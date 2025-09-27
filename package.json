@@ -1,36 +1,20 @@
 {
-  "name": "making-tandem-website",
+  "name": "making-tandem-web",
   "version": "1.0.0",
-  "description": "Sitio web oficial de Making Tandem - Herramientas de comunicación visual",
+  "description": "Making Tandem - Herramientas de comunicación visual para familias adoptivas",
   "main": "index.html",
   "scripts": {
-    "start": "live-server --port=8080 --host=localhost --open=/",
-    "dev": "live-server --port=8080 --host=localhost --open=/ --watch=assets/css/,assets/js/",
-    "build": "echo 'Building for production...' && echo 'Project ready for deployment'",
-    "test": "echo 'No tests specified'",
-    "deploy": "echo 'Ready for deployment to Railway, Netlify, or GitHub Pages'"
+    "start": "npx serve . -s -p $PORT",
+    "dev": "npx serve . -s -p 3000",
+    "build": "echo 'Static site - no build needed'"
   },
-  "keywords": [
-    "pictogramas",
-    "comunicacion-visual",
-    "adopcion-internacional",
-    "educacion-infantil",
-    "familia",
-    "making-tandem"
-  ],
-  "author": "Making Tandem",
+  "keywords": ["pictogramas", "adopción internacional", "comunicación visual", "educación infantil"],
+  "author": "Natalia y Carlos - Making Tandem",
   "license": "MIT",
-  "devDependencies": {
-    "live-server": "^1.2.2"
+  "dependencies": {
+    "serve": "^14.2.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/making-tandem/website.git"
-  },
-  "homepage": "https://makingtandem.com",
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }

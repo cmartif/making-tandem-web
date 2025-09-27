@@ -83,3 +83,20 @@ build/
 
 # Cache files
 .cache/
+
+# Documentation files (not needed in production)
+*-ACTUALIZADOS.md
+*-COMPLETADAS.md
+*-REALIZADAS.md
+CORRECCIONES-*.md
+CAMBIOS-*.md
+MEJORAS-*.md
+PROGRESO-*.md
+PROYECTO-*.md
+
+# Railway config (causes errors)
+railway.toml
+
+# Unnecessary CSS files
+assets/css/enhancements.css
+assets/css/image-placeholders.css
